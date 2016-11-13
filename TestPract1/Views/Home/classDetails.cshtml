@@ -1,0 +1,31 @@
+﻿@model TestPract1.Models.SemClassViewModels
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <!--ViewBag.Title = "classDetails";-->
+}
+    <h2>@ViewBag.Title</h2>
+    <h3>@ViewBag.Message</h3>
+
+<div>
+    <h4>Class Detail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            
+            <form>
+                @Html.DisplayNameFor(model => model.courseName)
+                <input type="text" name="courseName"/>
+            </form>
+        </dt>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.courseNumber)
+        </dt>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.semester)
+        </dt>
+    </dl>
+
+
+</div>

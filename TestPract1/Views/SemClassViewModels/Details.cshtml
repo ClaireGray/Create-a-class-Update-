@@ -1,0 +1,42 @@
+﻿@model TestPract1.Models.SemClassViewModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SemClassViewModels</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.courseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.courseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.courseNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.courseNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.semester)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.semester)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
